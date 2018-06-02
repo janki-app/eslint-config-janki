@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-janki",
+  "version": "1.0.0",
+  "description": "eslint config for janki",
+  "main": "index.js",
+  "scripts": {
+    "lint": "lint ."
+  },
+  "author": "James Lawson <mail@jameslawson.io>",
+  "license": "Apache-2.0",
+  "keywords": [
+    "janki",
+    "eslint"
+  ],
+  "peerDependencies": {
+    "eslint": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0"
+  },
+  "dependencies": {
+    "eslint-plugin-mocha": "^4.11.0"
+  }
+}
