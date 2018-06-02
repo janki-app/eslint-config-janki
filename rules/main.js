@@ -4,7 +4,7 @@ module.exports = {
   rules: {
     'array-bracket-spacing': [ 'error', 'never' ],
     'arrow-body-style': 'off',
-    'arrow-parens': 'error',
+    'arrow-parens': ['error', 'as-needed'],
     'arrow-spacing': [ 'error', { before: true, after: true }],
     'comma-dangle': [ 'error', 'never' ],
     'comma-style': [ 'error', 'last' ],
@@ -66,6 +66,13 @@ module.exports = {
     'no-lonely-if': 'error',
     'no-loop-func': 'error',
     'no-mixed-spaces-and-tabs': 'error',
+    'no-multi-spaces': ['error', {
+      exceptions: {
+        "VariableDeclarator": true,
+        "ImportDeclaration": true,
+        "IfStatement": true
+      }
+    }],
     'no-multi-str': 'error',
     'no-multiple-empty-lines': [ 'error', { max: 1, maxEOF: 0 } ],
     'no-negated-in-lhs': 'error',
@@ -87,6 +94,7 @@ module.exports = {
     'no-undef': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
+    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', argsIgnorePattern: '^_' }],
     'no-underscore-dangle': 'off',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',

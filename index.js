@@ -3,8 +3,9 @@
 module.exports = {
   plugins: [ 'eslint-plugin-mocha' ],
   extends: [
-    './rules/main'
-  ].map(require.resolve),
+    'eslint:recommended',
+    require.resolve('./rules/main')
+  ],
   rules: {},
   env: {
     node: true,
