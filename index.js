@@ -12,6 +12,10 @@ module.exports = {
     mocha: true,
     es6: true
   },
+  globals: {
+    '__rewire_reset_all__': true,
+    expect: true,
+  },
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 8,
